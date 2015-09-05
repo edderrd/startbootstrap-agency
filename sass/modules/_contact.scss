@@ -1,0 +1,49 @@
+section#contact {
+    background-color: $gray-darkest;
+    background-image: url('../img/map-image.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    .section-heading {
+        color: white;
+    }
+    .form-group {
+        margin-bottom: 25px;
+        input,
+        textarea {
+            padding: 20px;
+        }
+        input.form-control {
+            height: auto;
+        }
+        textarea.form-control {
+            height: 236px;
+        }
+    }
+    .form-control:focus {
+        border-color: $brand-primary;
+        box-shadow: none;
+    }
+    ::-webkit-input-placeholder {
+       @include heading-font;
+       font-weight: 700;
+       color: $placeholder-text;
+    }
+    :-moz-placeholder { /* Firefox 18- */
+       @include heading-font;
+       font-weight: 700;
+       color: $placeholder-text;
+    }
+    ::-moz-placeholder {  /* Firefox 19+ */
+       @include heading-font;
+       font-weight: 700;
+       color: $placeholder-text;
+    }
+    :-ms-input-placeholder {
+       @include heading-font;
+       font-weight: 700;
+       color: $placeholder-text;
+    }
+    .text-danger {
+        color: $brand-danger;
+    }
+}

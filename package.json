@@ -1,0 +1,41 @@
+{
+  "name": "startbootstrap-agency",
+  "version": "1.0.0",
+  "description": "Agency is a one page agency portfolio theme for Bootstrap created by Start Bootstrap. This theme features several content sections, a responsive portfolio grid with hover effects, full page portfolio item modals, a responsive timeline, and a working PHP contact form.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edderrd/startbootstrap-agency.git"
+  },
+  "keywords": [
+    "bootstrap",
+    "sass",
+    "template",
+    "agency"
+  ],
+  "author": "IronSummitMedia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edderrd/startbootstrap-agency/issues"
+  },
+  "homepage": "https://github.com/edderrd/startbootstrap-agency#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-connect": "^2.2.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.0.4",
+    "gulp-uglify": "^1.4.0"
+  },
+  "dependencies": {
+    "bootstrap-sass": "^3.3.5",
+    "classie": "^1.0.0",
+    "font-awesome": "^4.4.0",
+    "jquery": "^2.1.4",
+    "jquery-easing": "0.0.1"
+  }
+}

@@ -1,0 +1,91 @@
+// Global Components
+
+body {
+    overflow-x: hidden;
+    @include body-font;
+}
+
+.text-muted {
+    color: $gray;
+}
+
+.text-primary {
+    color: $brand-primary;
+}
+
+p {
+    font-size: 14px;
+    line-height: 1.75;
+}
+
+p.large {
+    font-size: 16px;
+}
+
+a,
+a:hover,
+a:focus,
+a:active,
+a.active {
+    outline: none;
+}
+
+a {
+    color: $brand-primary;
+}
+
+a:hover,
+a:focus,
+a:active,
+a.active {
+    color: darken($brand-primary, 10%);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    @include heading-font;
+    font-weight: 700;
+}
+
+.img-centered {
+    margin: 0 auto;
+}
+
+.bg-light-gray {
+    background-color: $gray-lighter;
+}
+
+.bg-darkest-gray {
+    background-color: $gray-darkest;
+}
+
+// Clients Aside
+
+aside.clients {
+    img {
+        margin: 50px auto;
+    }
+}
+
+// Highlight Color Customization
+
+::-moz-selection {
+    text-shadow: none;
+    background: $brand-primary;
+}
+
+::selection {
+    text-shadow: none;
+    background: $brand-primary;
+}
+
+img::selection {
+    background: transparent;
+}
+
+img::-moz-selection {
+    background: transparent;
+}
+
+body {
+    webkit-tap-highlight-color: $brand-primary;
+}
