@@ -1,6 +1,6 @@
 {
   "name": "startbootstrap-agency",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Agency is a one page agency portfolio theme for Bootstrap created by Start Bootstrap. This theme features several content sections, a responsive portfolio grid with hover effects, full page portfolio item modals, a responsive timeline, and a working PHP contact form.",
   "main": "index.html",
   "scripts": {
