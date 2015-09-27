@@ -14,15 +14,12 @@ var paths = {
   sass: 'sass/*.scss',
   jsLibs: [
     './node_modules/jquery/dist/jquery.js',
-    './node_modules/bootstrap/dist/js/bootstrap.js',
+    './node_modules/bootstrap-sass/assets/javascripts/bootstrap.js',
     './node_modules/jquery-easing/jquery.easing.1.3.js',
     './js/libs/*.js'
   ],
-  js: [
-    './js/*.js'
-  ],
   fonts: [
-    './node_modules/bootstrap/fonts/*',
+    './node_modules/bootstrap-sass/fonts/*',
     './node_modules/font-awesome/fonts/*'
   ],
   images: [
@@ -52,9 +49,6 @@ gulp.task('scripts', function() {
   gulp.src(paths.jsLibs)
     .pipe(concat('libs.js'))
     .pipe(gulp.dest('dist/js/'));
-
-  gulp.src(paths.js)
-    .pipe(gulp.dest('dist/js'));
 });
 
 /**
@@ -83,7 +77,7 @@ gulp.task('server', ['sass', 'fonts', 'scripts', 'images', 'watch'], function() 
   });
 });
 
-  /**
+/**
  * Reload HTML web server
  */
 gulp.task('server-reload', function() {
@@ -91,9 +85,7 @@ gulp.task('server-reload', function() {
     .pipe(connect.reload());
 });
 
-gulp.task('dist', function() {
-
-});
+gulp.task('dist', function() {});
 
 /**
  * Watch files for changes
